@@ -62,10 +62,10 @@ _Configurações dos serviços estão localizadas no arquivo servicesConfig.md n
 
 ```bash
 # Primeiro clone o repositório utilizando git:
-$ git clone https://github.com/diegonatalo/exemplo.git
+$ git clone https://github.com/diegonatalo/ignews.git
 
 # Depois acesse a pasta do projeto:
-$ cd exemplo
+$ cd ignews
 
 # Em seguida instale as dependências:
 $ npm i
