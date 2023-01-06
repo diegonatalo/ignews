@@ -1,34 +1,33 @@
 <h1 align="center">
-  <img alt="Logo" src="https://repository-images.githubusercontent.com/344824358/0ff8ac80-8026-11eb-8ed1-e8b77764fbcd" alt="Ignite React">
+  <img alt="Logo" src="assets/readme-banner.jpg" alt="Exemplo">
 </h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg"/>
+  <img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg"/>
+  <img src="https://img.shields.io/badge/license-MIT-blue" />
+</p>
 
 <h1 align="center">
-    ig.News
+    Ig.News
 </h1>
 <p align="center">Aplicação para inscrição de newsletter com pagamento via stripe</p>
-
 
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre o Projeto</a> •
  <a href="#-tecnologias">Tecnologias</a> •
- <a href="#-configurações-necessárias">Configurações necessárias</a> •
- <a href="#-licença">Licença</a> •
- <a href="#%EF%B8%8F-autor">Autor</a>
+ <a href="#-configurando-o-ambiente">Configurando o Ambiente</a> •
+ <a href="#-licença">Licença</a>
 </p>
 
 ## 📌 Sobre o projeto
 
 O projeto tem como objetivo o estudo e desenvolvimento de uma aplicação em ReactJS com NextJS para listagem de posts e sistema de inscrição(subscription).
-
 A aplicação foi desenvolvida utilizando o framework NextJS aplicando conceitos como consumo de API externas, API Root, Server Side Rendering (SSR), Static Site Generation (SSG), STRIPE para pagamentos das subscriptions, NextAuth para autenticação com Github, FaunaDB para armazenar as informações do usuário em um banco de dados e Prismic CMS para adição e gerenciamento do conteúdo dos posts.
-
-O projeto foi desenvolvido como pratica das aulas do modulo 03 do [Ignite da Rocketseat](https://rocketseat.com.br/)
 
 ---
 
 ## 💻 Tecnologias
-
-Abaixo as tecnologias utilizadas para construção da aplicação
 
 - [ReactJS](https://reactjs.org/)
 - [NextJS](https://nextjs.org/)
@@ -41,50 +40,46 @@ Abaixo as tecnologias utilizadas para construção da aplicação
 
 ---
 
-## 🚧 Configurações necessárias
+## 🌱 Configurando o ambiente
 
-### **Requisitos**
+### 🚧 **Requisitos**
 
-Necessário realizar as instalações:
+> Será necessário instalar os itens abaixo para clonar e executar o projeto corretamente!
 
 - [Git](https://git-scm.com/)
-- [Yarn](https://classic.yarnpkg.com)
+- [Node](https://nodejs.org/)
 - [Stripe CLI](https://stripe.com/docs/stripe-cli)
 
-Criar conta e configurar os serviços externos:
+> Será necessário criar uma conta e configurar os seguintes serviços externos:
 
 - [Stripe](https://stripe.com/)
 - [FaunaDB](https://fauna.com/)
 - [Prismic CMS](https://prismic.io/)
 
-*Configurações dos serviços estão localizadas no arquivo servicesConfig.md na raiz do projeto.*
+_Configurações dos serviços estão localizadas no arquivo servicesConfig.md na raiz do projeto._
 
-### **Clone do projeto**
-
-```bash
-# Execute o comando git clone para realizar o clone do repositório
-$ git clone https://github.com/kerneldn/ignews.git
-# Entre na pasta do repositório clonado
-$ cd ignews
-```
-
-### **Iniciando o projeto**
+### ⏩ **Clonando e executando a aplicação**
 
 ```bash
-# Execute yarn para instalar as dependências
-$ yarn
+# Primeiro clone o repositório utilizando git:
+$ git clone https://github.com/diegonatalo/exemplo.git
 
-# Na raiz do projeto crie uma copia do arquivo .env.local.example
+# Depois acesse a pasta do projeto:
+$ cd exemplo
+
+# Em seguida instale as dependências:
+$ npm i
+
+# Na raiz do projeto, crie uma copia do arquivo .env.local.example
 # Altere o nome da copia para .env.local
 # Preencha as variáveis ambiente de acordo com as instruções
 $ cp .env.local.example .env.local
 
 # Execute stripe listen para ouvir eventos do webhook
-$ stripe listen --forward-to localhost:3000/api/webhooks 
+$ stripe listen --forward-to localhost:3000/api/webhooks
 
-# Para iniciar a aplicação
-$ yarn dev
-
+# Por fim, inicie a aplicação:
+$ npm run dev
 ```
 
 ---
@@ -95,8 +90,4 @@ Distribuído sob a licença MIT. Veja [LICENSE](LICENSE) para mais informações
 
 ---
 
-## ❤️ Autor
-
-Feito com 💜 por Diego Natalo!
-
-[![Linkedin Badge](https://img.shields.io/badge/-Diego-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/diego-natalo/)
+<p align="center">Feito com ❤️ por Deigo Natalo.</p>
